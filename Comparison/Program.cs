@@ -30,6 +30,27 @@ namespace LineComparision
             }
             Console.WriteLine("-----------------------------------");
 
+            //Usecase-3
+            LineComparing Line = new LineComparing(2, 3, 4, 5);
+            Line.Comparing();
+            LineComparing Line1 = new LineComparing(1, 3, 5, 7);
+            Line1.Comparing();
+            int val = line.GetHashCode();
+            Console.WriteLine(val + "  " + Line + "  " + Line1);
+            if (val == 0)
+            {
+                Console.WriteLine("line one is Equal");
+            }
+            if (val == 1)
+            {
+                Console.WriteLine("Line one is Greater");
+            }
+            else
+            {
+                Console.WriteLine("Line one is Smaller");
+            }
         }
+
     }
+    
 }
