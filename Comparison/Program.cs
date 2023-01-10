@@ -1,4 +1,4 @@
-﻿using LineComparison;
+﻿using LineComparision;
 using LineComparison.LineComparison.Comparison;
 
 namespace LineComparision
@@ -49,6 +49,11 @@ namespace LineComparision
             {
                 Console.WriteLine("Line one is Smaller");
             }
+
+            //UC_4
+            CompareToMethods length = new CompareToMethods();
+            length.CalculatingLength(); //C
+            Console.ReadLine();
         }
 
     }
